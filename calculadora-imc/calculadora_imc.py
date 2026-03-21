@@ -1,8 +1,8 @@
 # Entrada de dados
 peso = float(input("Digite seu peso (kg): "))
-altura_str = input("Digite sua altura (m): ")   # string
-altura_str = altura_str.replace(",", ".")       # substitui vírgula
-altura = float(altura_str)                      # converte para float
+altura_str = input("Digite sua altura (m): ")   
+altura_str = altura_str.replace(",", ".")       
+altura = float(altura_str) # Formatação para usar altura com "," e "."                     
 
 # Validação
 if peso > 0 and altura > 0:
