@@ -48,6 +48,15 @@ Projeto desenvolvido com foco em prática de:
 
 ---
 
+## 🔮 Melhorias futuras
+
+- Melhorar a interface (UI/UX)
+- Adicionar validação mais robusta dos inputs
+- Tornar o layout mais responsivo para mobile
+- Implementar histórico de cálculos
+- Separar lógica em camadas (estrutura mais escalável)
+- Adicionar gráficos ou visualizações do IMC
+
 ## 👩‍💻 Autor
 
 Gabrielle Christie
