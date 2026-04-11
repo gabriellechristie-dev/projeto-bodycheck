@@ -1,14 +1,14 @@
-# 🧮 BodyCheck
+#  BodyCheck
 
 Aplicação web simples para cálculo de IMC (Índice de Massa Corporal), com classificação automática e sugestão de ajuste de peso para entrar na faixa saudável.
 
-## 🌐 Demonstração
+##  Demonstração
 
-(https://bodycheck.onrender.com/)
+https://bodycheck.onrender.com
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 - Cálculo de IMC a partir de peso e altura
 - Classificação automática:
@@ -21,7 +21,7 @@ Aplicação web simples para cálculo de IMC (Índice de Massa Corporal), com cl
 
 ---
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 - Python
 - Flask
@@ -31,13 +31,13 @@ Aplicação web simples para cálculo de IMC (Índice de Massa Corporal), com cl
 
 ---
 
-## 📦 Deploy
+##  Deploy
 
 Este projeto está hospedado no Render.
 
 ---
 
-## 📌 Observação
+##  Observação
 
 Projeto desenvolvido com foco em prática de:
 
@@ -48,7 +48,7 @@ Projeto desenvolvido com foco em prática de:
 
 ---
 
-## 🔮 Melhorias futuras
+##  Melhorias futuras
 
 - Melhorar a interface (UI/UX)
 - Adicionar validação mais robusta dos inputs
@@ -57,6 +57,6 @@ Projeto desenvolvido com foco em prática de:
 - Separar lógica em camadas (estrutura mais escalável)
 - Adicionar gráficos ou visualizações do IMC
 
-## 👩‍💻 Autor
+##  Autor
 
 Gabrielle Christie
