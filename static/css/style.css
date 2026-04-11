@@ -1,99 +1,126 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #3606e2, #0acf73);
+  font-family: 'Inter', Arial, sans-serif;
   margin: 0;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  color: #e2e8f0;
+
+  /* 🍓 fundo com alimentação saudável */
+  background: url("https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+
+  position: relative;
+}
+
+/* overlay escuro pra leitura */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.72);
 }
 
 .container {
-  width: 350px;
+  position: relative;
+  z-index: 1;
+  width: 360px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
+/* card estilo clean saúde */
 .card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.35);
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
 }
 
 label {
-  display: block;
-  margin-top: 10px;
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.exemplo {
+  font-size: 11px;
+  color: #64748b;
 }
 
 input {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(15, 23, 42, 0.6);
+  color: #e2e8f0;
   font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34,197,94,0.2);
 }
 
 button {
-  margin-top: 20px;
+  margin-top: 18px;
   width: 100%;
   padding: 12px;
-  background: #667eea;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   border: none;
   color: white;
-  border-radius: 8px;
+  border-radius: 12px;
+  font-weight: 600;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 button:hover {
-  background: #5a67d8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(34,197,94,0.25);
 }
 
+/* resultado */
 .resultado {
   text-align: center;
-  border-top: 3px solid #667eea;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 14px;
 }
 
-.resultado p:first-of-type {
-  font-size: 18px;
-  font-weight: bold;
+.imc-valor {
+  font-size: 32px;
+  font-weight: 700;
+  color: #22c55e;
 }
 
-.resultado p:last-of-type {
-  font-size: 14px;
-  color: #555;
-}
-
-/* Classes de status */
-.baixo {
-  border-left: 6px solid #3498db;
-}
-
-.normal {
-  border-left: 6px solid #2ecc71;
-}
-
-.sobrepeso {
-  border-left: 6px solid #f1c40f;
-}
-
-.obesidade {
-  border-left: 6px solid #e74c3c;
-}
+/* status */
+.baixo { border-left: 5px solid #38bdf8; }
+.normal { border-left: 5px solid #22c55e; }
+.sobrepeso { border-left: 5px solid #facc15; }
+.obesidade { border-left: 5px solid #ef4444; }
 
 .ajuste {
   margin-top: 10px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #333;
+  font-size: 13px;
+  color: #cbd5e1;
 }

@@ -1,14 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  
   const form = document.querySelector("form");
 
   form.addEventListener("submit", function (event) {
-    
-    const peso = document.querySelector("input[name='peso']").value;
-    const altura = document.querySelector("input[name='altura']").value;
+    const peso = parseFloat(document.querySelector("input[name='peso']").value);
+    const altura = parseFloat(document.querySelector("input[name='altura']").value);
 
     if (!peso || !altura) {
-      event.preventDefault(); // impede o envio
+      event.preventDefault();
       alert("Preencha todos os campos!");
       return;
     }
@@ -19,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    if (altura > 3) {
+      // aviso leve, não bloqueia
+      alert("Altura acima de 3m detectada. Verifique se está em cm.");
+    }
   });
-
 });
